@@ -1,0 +1,54 @@
+// Main page 2
+
+.main-portfolio{
+    margin: 94px 0;
+}
+// filter or фильтер
+
+.filter{
+
+    display: flex;
+    justify-content: center;
+
+    &__elements{
+
+        margin-right: 8px;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+
+    }
+
+    &__button{
+
+        padding: 6px 22px;
+
+        border: none;
+        border-radius: 4px;  
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        background-color: #F5F4FA;
+        color: $colorText;
+
+        transition: background-color 250ms $cube,
+                    color 250ms $cube;
+
+        &:hover,
+        &:focus{
+
+            color: #F5F4FA;
+            background-color: $colorBlue;
+
+        }
+
+    }
+
+}
