@@ -1,11 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,GAAG;CACtB",
+    "mappings": "",
     "sources": [
-        "../sass/main.scss",
-        "../sass/components/_mobile.sass",
-        "../sass/components/_tablet.sass",
-        "../sass/components/_desktop.sass"
+        "../sass/main.sass"
     ],
     "names": [],
     "file": "main.css"

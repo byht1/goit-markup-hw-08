@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../sass/main.sass"
+        "../sass/components/jhvyurbng.sass"
     ],
     "names": [],
-    "file": "main.min.css"
+    "file": "jhvyurbng.css"
 }
