@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.overlay {
+  display: none;
+}
+
+body {
+  background-color: red;
+}
+/*# sourceMappingURL=main.css.map */

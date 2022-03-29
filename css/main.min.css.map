@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACP,OAAO,CAAE,IAAI,CACd,AAED,AAAA,IAAI,AAAC,CACH,gBAAgB,CAAE,GAAG,CACtB",
     "sources": [
         "../sass/main.scss",
         "../sass/components/_mobile.sass",
