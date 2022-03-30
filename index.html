@@ -19,34 +19,67 @@
   </head>
   <body>
     <!-- Шапка or header -->
-    <header class="header field">
+    <header class="header">
       <div class="box">
-        <nav class="nav">
-          <a class="nav__logo" href="index.html"><span class="nav--color">Web</span>Studio</a>
-          <ul class="page">
-            <li class="page__element page--activ"><a class="page__link" href="/">Студия</a></li>
-            <li class="page__element"><a class="page__link" href="portfolio.html">Портфолио</a></li>
-            <li class="page__element"><a class="page__link" href="contact.html">Контакти</a></li>
+        <div class="mobail">
+          <a class="logo" href="index.html"><span class="logo--color">Web</span>Studio</a>
+          <button
+            class="button-header is-open"
+            type="button"
+            aria-expanded="false"
+            data-open-modal
+            data-close-modal
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="button-header-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+              <use class="button-header-end" href="./images/symbol-defs.svg#icon-menu_end"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="nav-box is-hidden" data-backdrop>
+          <nav class="nav">
+            <ul class="page">
+              <li class="page__element"><a class="page__link page--activ" href="/">Студия</a></li>
+              <li class="page__element">
+                <a class="page__link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="page__element"><a class="page__link" href="contact.html">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts__element">
+              <a class="contacts__tel" href="tel:+380961111111">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="contacts__element">
+              <a class="contacts__mail" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
           </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts__element">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__element">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="network-header">
+            <li class="network-header__element">
+              <a class="network-header__link" href="https://www.instagram.com">Instagram</a>
+            </li>
+            <li class="network-header__element">
+              <a class="network-header__link" href="https://twitter.com/?lang=ua">Twitter</a>
+            </li>
+            <li class="network-header__element">
+              <a class="network-header__link" href="https://www.facebook.com">Facebook</a>
+            </li>
+            <li class="network-header__element">
+              <a class="network-header__link" href="https://ua.linkedin.com">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -54,7 +87,7 @@
     <main>
       <!-- Герой or Hero -->
       <section class="hero">
-        <div class="box-hero field">
+        <div class="box-hero">
           <h1 class="box-hero__header">Эффективные решения<br />для вашего бизнеса</h1>
           <button class="button" type="button" data-open-modal>
             <span class="button-text">Заказать услугу</span>
@@ -125,7 +158,7 @@
       </section>
 
       <!-- Преимущества or Benefist -->
-      <section class="benefist field">
+      <section class="benefist">
         <h2 class="visually-hidden">Преимущества</h2>
         <!-- Заховать -->
         <ul class="content">
@@ -180,7 +213,7 @@
       </section>
 
       <!--Вид деятельность or Activity -->
-      <section class="activity field">
+      <section class="activity">
         <h2 class="activity__header">Чем мы занимаемся</h2>
         <ul class="photo">
           <li class="photo__elements">
@@ -253,7 +286,7 @@
       </section>
 
       <!-- Команда or team -->
-      <section class="team field">
+      <section class="team">
         <div class="team-box">
           <h2 class="team-box__header">Наша команда</h2>
           <ul class="list">
@@ -513,7 +546,7 @@
       </section>
 
       <!-- Компании -->
-      <section class="company field">
+      <section class="company">
         <h2 class="company__header">Постоянные клиенты</h2>
         <ul class="company-list">
           <li class="company-list__elements">
@@ -563,7 +596,7 @@
     </main>
 
     <!-- Подвал or footer -->
-    <footer class="footer field">
+    <footer class="footer">
       <div class="footer-box">
         <!-- Логотип и адрес or logo and address-->
         <div class="address-box">
@@ -644,6 +677,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="./modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
