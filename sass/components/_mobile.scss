@@ -1,1 +1,60 @@
-@import 'mobile/header-mobail';
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  @import 'mobile/header-mobail';
+  @import 'mobile/hero-mobail';
+}
+@import 'mobile/benefist-mobail';
+@import 'mobile/team-mobail';
+@import 'mobile/company';
+
+@media screen and (max-width: 1199px) {
+  // h1 for hero
+  .box-hero__header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $colorWhite;
+  }
+  // Контейнер для Преимущества or Benefist
+  .benefist-box {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .content__elements {
+    margin-top: 30px;
+  }
+  // h2 for team
+  .team-box__header {
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $colorText;
+  }
+
+  // h2 for company
+  .company__header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $colorText;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
+}

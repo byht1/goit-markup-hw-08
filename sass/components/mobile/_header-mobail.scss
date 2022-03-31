@@ -1,6 +1,5 @@
 .mobail {
   padding: 16px 0;
-  margin: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +13,7 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  z-index: 1;
+  z-index: 2;
 
   &-menu,
   &-end {
@@ -48,6 +47,10 @@
 }
 
 .nav-box {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -85,16 +88,24 @@
 }
 
 .contacts {
-  margin-top: 302px;
+  // margin-top: 302px;
   & svg {
     display: none;
+  }
+
+  &__element {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &__mail {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: $colorMain;
   }
@@ -104,7 +115,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
-    line-height: 40px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     color: $colorBlue;
   }
@@ -131,7 +142,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     color: $colorBlue;
   }

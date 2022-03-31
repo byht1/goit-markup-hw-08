@@ -21,7 +21,7 @@
     <!-- Шапка or header -->
     <header class="header">
       <div class="box">
-        <div class="mobail">
+        <div class="mobail container">
           <a class="logo" href="index.html"><span class="logo--color">Web</span>Studio</a>
           <button
             class="button-header is-open"
@@ -47,38 +47,40 @@
               <li class="page__element"><a class="page__link" href="contact.html">Контакти</a></li>
             </ul>
           </nav>
-          <ul class="contacts">
-            <li class="contacts__element">
-              <a class="contacts__tel" href="tel:+380961111111">
-                <svg class="contacts__icon" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-            <li class="contacts__element">
-              <a class="contacts__mail" href="mailto:info@devstudio.com">
-                <svg class="contacts__icon" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="network-header">
-            <li class="network-header__element">
-              <a class="network-header__link" href="https://www.instagram.com">Instagram</a>
-            </li>
-            <li class="network-header__element">
-              <a class="network-header__link" href="https://twitter.com/?lang=ua">Twitter</a>
-            </li>
-            <li class="network-header__element">
-              <a class="network-header__link" href="https://www.facebook.com">Facebook</a>
-            </li>
-            <li class="network-header__element">
-              <a class="network-header__link" href="https://ua.linkedin.com">LinkedIn</a>
-            </li>
-          </ul>
+          <div>
+            <ul class="contacts">
+              <li class="contacts__element">
+                <a class="contacts__tel" href="tel:+380961111111">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="contacts__element">
+                <a class="contacts__mail" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="network-header">
+              <li class="network-header__element">
+                <a class="network-header__link" href="https://www.instagram.com">Instagram</a>
+              </li>
+              <li class="network-header__element">
+                <a class="network-header__link" href="https://twitter.com/?lang=ua">Twitter</a>
+              </li>
+              <li class="network-header__element">
+                <a class="network-header__link" href="https://www.facebook.com">Facebook</a>
+              </li>
+              <li class="network-header__element">
+                <a class="network-header__link" href="https://ua.linkedin.com">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -87,7 +89,7 @@
     <main>
       <!-- Герой or Hero -->
       <section class="hero">
-        <div class="box-hero">
+        <div class="box-hero container">
           <h1 class="box-hero__header">Эффективные решения<br />для вашего бизнеса</h1>
           <button class="button" type="button" data-open-modal>
             <span class="button-text">Заказать услугу</span>
@@ -159,57 +161,59 @@
 
       <!-- Преимущества or Benefist -->
       <section class="benefist">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <!-- Заховать -->
-        <ul class="content">
-          <li class="content__elements">
-            <div class="content__fon">
-              <svg width="70" height="70">
-                <use href="./images/symbol-defs.svg#icon-antenna-1"></use>
-              </svg>
-            </div>
-            <h3 class="content__paragraph">Внимание к деталям</h3>
-            <p class="content__text">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
+        <div class="benefist-box container">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <!-- Заховать -->
+          <ul class="content">
+            <li class="content__elements">
+              <div class="content__fon">
+                <svg width="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
+              <h3 class="content__paragraph">Внимание к деталям</h3>
+              <p class="content__text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
 
-          <li class="content__elements">
-            <div class="content__fon">
-              <svg width="70" height="70">
-                <use href="./images/symbol-defs.svg#icon-clock-1"></use>
-              </svg>
-            </div>
-            <h3 class="content__paragraph">Пунктуальность</h3>
-            <p class="content__text">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой
-            </p>
-          </li>
+            <li class="content__elements">
+              <div class="content__fon">
+                <svg width="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              <h3 class="content__paragraph">Пунктуальность</h3>
+              <p class="content__text">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой
+              </p>
+            </li>
 
-          <li class="content__elements">
-            <div class="content__fon">
-              <svg width="70" height="70">
-                <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
-              </svg>
-            </div>
-            <h3 class="content__paragraph">Планирование</h3>
-            <p class="content__text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
+            <li class="content__elements">
+              <div class="content__fon">
+                <svg width="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
+              <h3 class="content__paragraph">Планирование</h3>
+              <p class="content__text">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
 
-          <li class="content__elements">
-            <div class="content__fon">
-              <svg width="70" height="70">
-                <use href="./images/symbol-defs.svg#icon-Group"></use>
-              </svg>
-            </div>
-            <h3 class="content__paragraph">Современные технологии</h3>
-            <p class="content__text">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
+            <li class="content__elements">
+              <div class="content__fon">
+                <svg width="70" height="70">
+                  <use href="./images/symbol-defs.svg#icon-Group"></use>
+                </svg>
+              </div>
+              <h3 class="content__paragraph">Современные технологии</h3>
+              <p class="content__text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!--Вид деятельность or Activity -->
@@ -287,7 +291,7 @@
 
       <!-- Команда or team -->
       <section class="team">
-        <div class="team-box">
+        <div class="team-box container">
           <h2 class="team-box__header">Наша команда</h2>
           <ul class="list">
             <li class="list__elements">
@@ -304,6 +308,7 @@
                   type="image/webp"
                 />
                 <img
+                  class="list__photo"
                   srcset="
                     ./images/team/1/team_one_desktop-270.jpg 270w,
                     ./images/team/1/team_one_desktop-540.jpg 540w,
@@ -320,42 +325,43 @@
 
               <div class="text">
                 <h3 class="text__name">Игорь Демьяненко</h3>
-                <p class="text__profession">Product Designer</p>
+                <p lang="en" class="text__profession">Product Designer</p>
+                <ul class="network">
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.instagram.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://twitter.com/?lang=ru">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-Group-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.facebook.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.linkedin.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="network">
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.instagram.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://twitter.com/?lang=ru">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-Group-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.facebook.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.linkedin.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li class="list__elements">
               <picture>
                 <source
+                  class="list__photo"
                   srcset="
                     ./images/team/2/web/team-two_desctop-270.webp 270w,
                     ./images/team/2/web/team-two_desctop-540.webp 540w,
@@ -382,42 +388,43 @@
 
               <div class="text">
                 <h3 class="text__name">Ольга Репина</h3>
-                <p class="text__profession">Frontend Developer</p>
+                <p lang="en" class="text__profession">Frontend Developer</p>
+                <ul class="network">
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.instagram.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://twitter.com/?lang=ru">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-Group-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.facebook.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.linkedin.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="network">
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.instagram.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://twitter.com/?lang=ru">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-Group-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.facebook.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.linkedin.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li class="list__elements">
               <picture>
                 <source
+                  class="list__photo"
                   srcset="
                     ./images/team/3/web/team_three_desctop-270.webp 270w,
                     ./images/team/3/web/team_three_desctop-540.webp 540w,
@@ -445,42 +452,43 @@
 
               <div class="text">
                 <h3 class="text__name">Николай Тарасов</h3>
-                <p class="text__profession">Marketing</p>
+                <p lang="en" class="text__profession">Marketing</p>
+                <ul class="network">
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.instagram.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://twitter.com/?lang=ru">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-Group-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.facebook.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.linkedin.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="network">
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.instagram.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://twitter.com/?lang=ru">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-Group-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.facebook.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.linkedin.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li class="list__elements">
               <picture>
                 <source
+                  class="list__photo"
                   srcset="
                     ./images/team/4/web/team_three_desktop-270.webp 270w,
                     ./images/team/4/web/team_three_desktop-540.webp 540w,
@@ -508,38 +516,38 @@
 
               <div class="text">
                 <h3 class="text__name">Михаил Ермаков</h3>
-                <p class="text__profession">UI Designer</p>
+                <p lang="en" class="text__profession">UI Designer</p>
+                <ul class="network">
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.instagram.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://twitter.com/?lang=ru">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-Group-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.facebook.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__elements">
+                    <a class="network__link" href="https://www.linkedin.com">
+                      <svg class="network__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="network">
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.instagram.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://twitter.com/?lang=ru">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-Group-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.facebook.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="network__elements">
-                  <a class="network__link" href="https://www.linkedin.com">
-                    <svg class="network__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
             </li>
           </ul>
         </div>
@@ -547,51 +555,53 @@
 
       <!-- Компании -->
       <section class="company">
-        <h2 class="company__header">Постоянные клиенты</h2>
-        <ul class="company-list">
-          <li class="company-list__elements">
-            <a class="company-list__link" href="/">
-              <svg class="company-list__logo" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-Logo"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="company-list__elements">
-            <a class="company-list__link" href="/">
-              <svg class="company-list__logo" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-Logo-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="company-list__elements">
-            <a class="company-list__link" href="/">
-              <svg class="company-list__logo" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-Logo-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="company-list__elements">
-            <a class="company-list__link" href="/">
-              <svg class="company-list__logo" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-Logo-3"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="company-list__elements">
-            <a class="company-list__link" href="/">
-              <svg class="company-list__logo" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-Logo-4"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="company-list__elements">
-            <a class="company-list__link" href="/">
-              <svg class="company-list__logo" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-Logo-5"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="company-box container">
+          <h2 class="company__header">Постоянные клиенты</h2>
+          <ul class="company-list">
+            <li class="company-list__elements">
+              <a class="company-list__link" href="/">
+                <svg class="company-list__logo" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-Logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-list__elements">
+              <a class="company-list__link" href="/">
+                <svg class="company-list__logo" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-Logo-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-list__elements">
+              <a class="company-list__link" href="/">
+                <svg class="company-list__logo" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-Logo-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-list__elements">
+              <a class="company-list__link" href="/">
+                <svg class="company-list__logo" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-Logo-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-list__elements">
+              <a class="company-list__link" href="/">
+                <svg class="company-list__logo" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-Logo-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-list__elements">
+              <a class="company-list__link" href="/">
+                <svg class="company-list__logo" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-Logo-5"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
