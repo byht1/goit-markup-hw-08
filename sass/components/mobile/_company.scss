@@ -1,3 +1,7 @@
+.company {
+  width: 480px;
+}
+
 @media screen and (max-width: 1199px) {
   .company-box {
     padding-top: 60px;
@@ -34,7 +38,14 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .company-list {
+    width: 450px;
+    height: 399px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .company-list__elements {
     width: 210px;
     height: 92px;
@@ -45,12 +56,16 @@
     margin-bottom: 30px;
     margin-right: 0px;
 
-    &:not(:nth-child(2n)) {
-      margin-right: 30px;
-    }
+    // &:not(:nth-child(2n)) {
+    //   margin-right: 30px;
+    // }
 
     &:nth-last-child(-n + 2) {
       margin-bottom: 0px;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
     }
   }
 }

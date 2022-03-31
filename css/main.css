@@ -123,7 +123,7 @@ button {
   display: none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .mobail {
     padding: 16px 0;
     display: -webkit-box;
@@ -262,19 +262,22 @@ button {
     color: #2196F3;
   }
   .hero {
-    width: 480px;
+    background-image: -webkit-image-set(url("../images/fon/web/fon_mobai@1x.webp") 1x, url("../images/fon/web/fon_mobai@2x.webp") 2x, url("../images/fon/fon_mobai@1x.jpg") 1x, url("../images/fon/fon_mobai@2x.jpg") 2x);
+    background-image: image-set(url("../images/fon/web/fon_mobai@1x.webp") 1x, url("../images/fon/web/fon_mobai@2x.webp") 2x, url("../images/fon/fon_mobai@1x.jpg") 1x, url("../images/fon/fon_mobai@2x.jpg") 2x);
+    background-size: cover;
+    background-position: 50% 50%;
     height: 400px;
     background-color: #757575;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 480px) {
   .hero {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .box-hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -430,6 +433,10 @@ button {
   fill: currentColor;
 }
 
+.company {
+  width: 480px;
+}
+
 @media screen and (max-width: 1199px) {
   .company-box {
     padding-top: 60px;
@@ -474,7 +481,13 @@ button {
   border-color: #2196f3;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .company-list {
+    width: 450px;
+    height: 399px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .company-list__elements {
     width: 210px;
     height: 92px;
@@ -485,11 +498,11 @@ button {
     margin-bottom: 30px;
     margin-right: 0px;
   }
-  .company-list__elements:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
   .company-list__elements:nth-last-child(-n + 2) {
     margin-bottom: 0px;
+  }
+  .company-list__elements:nth-child(2n + 1) {
+    margin-right: 30px;
   }
 }
 
