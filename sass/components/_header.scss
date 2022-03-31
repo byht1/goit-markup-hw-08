@@ -1,0 +1,85 @@
+@media screen and (min-width: 768px) {
+  .button-header,
+  .network-header {
+    display: none;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobail {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 88px;
+  }
+
+  .nav-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__element {
+      margin-right: 50px;
+
+      &:last-child {
+        margin-right: 84px;
+      }
+    }
+
+    &__link {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: $colorText;
+    }
+
+    &--activ::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #2196f3;
+    }
+  }
+
+  .contacts-box {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-right: 15px;
+  }
+
+  .contacts {
+    &__mail,
+    &__tel {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: $colorMain;
+    }
+
+    &__icon {
+      margin-right: 8px;
+      fill: currentColor;
+    }
+  }
+}

@@ -8,7 +8,6 @@
 .overlay {
   display: none;
 }
-// h1 для телефона і таблетки оформлений в mobile
-@import 'components/mobile';
-@import 'components/tablet';
-@import 'components/desctop';
+
+@import 'components/header-mobail'; // header mobail проблема 767px
+@import 'components/header';
