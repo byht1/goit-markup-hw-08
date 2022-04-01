@@ -11,7 +11,7 @@
   .mobail {
     display: flex;
     justify-content: flex-start;
-    margin-right: 88px;
+    margin-right: 87px;
   }
 
   .nav-box {
@@ -45,6 +45,11 @@
       line-height: 16px;
       letter-spacing: 0.02em;
       color: $colorText;
+
+      &:hover,
+      &:focus {
+        color: $colorBlue;
+      }
     }
 
     &--activ::before {
@@ -80,6 +85,48 @@
     &__icon {
       margin-right: 8px;
       fill: currentColor;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page--activ {
+    color: $colorBlue;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .mobail {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 93px;
+  }
+
+  .page__elemen:last-childt {
+    margin-right: 305px;
+  }
+
+  .contacts {
+    display: flex;
+
+    &__element:first-child {
+      margin-right: 30px;
+    }
+
+    &__mail,
+    &__tel {
+      font-size: 14px;
+      line-height: 1.14;
+
+      &:hover,
+      &:focus {
+        color: $colorBlue;
+      }
     }
   }
 }

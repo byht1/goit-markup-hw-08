@@ -86,6 +86,8 @@
   }
 
   .contacts {
+    display: flex;
+    flex-direction: column-reverse;
     // margin-top: 302px;
     & svg {
       display: none;

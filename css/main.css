@@ -224,6 +224,15 @@ button {
   .page--activ {
     color: #2196F3;
   }
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .contacts svg {
     display: none;
   }
@@ -312,7 +321,7 @@ button {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    margin-right: 88px;
+    margin-right: 87px;
   }
   .nav-box {
     display: -webkit-box;
@@ -353,6 +362,9 @@ button {
     letter-spacing: 0.02em;
     color: #212121;
   }
+  .page__link:hover, .page__link:focus {
+    color: #2196F3;
+  }
   .page--activ::before {
     content: '';
     position: absolute;
@@ -380,6 +392,46 @@ button {
   .contacts__icon {
     margin-right: 8px;
     fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page--activ {
+    color: #2196F3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .mobail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-right: 93px;
+  }
+  .page__elemen:last-childt {
+    margin-right: 305px;
+  }
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts__element:first-child {
+    margin-right: 30px;
+  }
+  .contacts__mail, .contacts__tel {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .contacts__mail:hover, .contacts__mail:focus, .contacts__tel:hover, .contacts__tel:focus {
+    color: #2196F3;
   }
 }
 /*# sourceMappingURL=main.css.map */
