@@ -1,0 +1,71 @@
+.box-hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.box-hero__header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $colorWhite;
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 400px;
+    background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4)),
+      image-set(
+        url('../images/fon/web/fon_mobai@1x.webp') 1x,
+        url('../images/fon/web/fon_mobai@2x.webp') 2x,
+        url('../images/fon/fon_mobai@1x.jpg') 1x,
+        url('../images/fon/fon_mobai@2x.jpg') 2x
+      );
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    height: 400px;
+    background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4)),
+      image-set(
+        url('../images/fon/web/fon_table@1x.webp') 1x,
+        url('../images/fon/web/fon_table@2x.webp') 2x,
+        url('../images/fon/fon_table@1x.jpg') 1x,
+        url('../images/fon/fon_table@2x.jpg') 2x
+      );
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4)),
+      image-set(
+        url('../images/fon/web/fon_desktop@1x.webp') 1x,
+        url('../images/fon/web/fon_desktop@2x.webp') 2x,
+        url('../images/fon/fon_desktop@1x.jpg') 1x,
+        url('../images/fon/fon_desktop@2x.jpg') 2x
+      );
+    background-position: 50% 50%;
+    background-size: cover;
+    .box-hero {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    .box-hero__header {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.37;
+    }
+  }
+}
