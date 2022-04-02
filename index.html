@@ -20,7 +20,7 @@
   <body>
     <!-- Шапка or header -->
     <header class="header section">
-      <div class="box container">
+      <div class="box container desktope">
         <nav class="nav">
           <a class="nav__logo" href="index.html"><span class="nav--color">Web</span>Studio</a>
           <ul class="page">
@@ -49,6 +49,70 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="box container mobail">
+        <div class="mobail-box">
+          <a class="nav__logo" href="index.html"><span class="nav--color">Web</span>Studio</a>
+          <button
+            class="button-menu"
+            type="button"
+            data-menu-button
+            data-open-modal
+            data-close-modal
+          >
+            <svg class="button-menu__icon" width="40" height="40">
+              <use class="button-menu__menu" href="./images/symbol-defs.svg#icon-menu_end"></use>
+              <use class="button-menu__end" href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobail-nav is-hidden" data-backdrop>
+          <div class="mobail-nav-box" data-menu>
+            <nav class="nav">
+              <ul class="page">
+                <li class="page__element page--activ"><a class="page__link" href="/">Студия</a></li>
+                <li class="page__element">
+                  <a class="page__link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="page__element">
+                  <a class="page__link" href="contact.html">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts">
+              <li class="contacts__element">
+                <a class="contacts__tel" href="tel:+380961111111">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="contacts__element">
+                <a class="contacts__mail" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="network-header">
+              <li class="network-header__element">
+                <a class="network-header__link" href="https://www.instagram.com">Instagram</a>
+              </li>
+              <li class="network-header__element">
+                <a class="network-header__link" href="https://twitter.com">Twitter</a>
+              </li>
+              <li class="network-header__element">
+                <a class="network-header__link" href="https://www.facebook.com">Facebook</a>
+              </li>
+              <li class="network-header__element">
+                <a class="network-header__link" href="https://www.linkedin.com">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Основной контент ot main -->
