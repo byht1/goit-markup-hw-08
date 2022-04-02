@@ -58,6 +58,9 @@
   }
 
   .page {
+    &__element {
+      color: $colorText;
+    }
     &__element:not(:first-child) {
       margin-top: 32px;
     }
@@ -68,7 +71,11 @@
       font-size: 40px;
       line-height: 1.18;
       letter-spacing: 0.02em;
-      color: $colorText;
+      color: currentColor;
+    }
+
+    &--activ {
+      color: $colorBlue;
     }
   }
 

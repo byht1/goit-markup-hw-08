@@ -217,6 +217,9 @@ button {
     margin-left: 40px;
     margin-right: 40px;
   }
+  .page__element {
+    color: #212121;
+  }
   .page__element:not(:first-child) {
     margin-top: 32px;
   }
@@ -227,7 +230,10 @@ button {
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: currentColor;
+  }
+  .page--activ {
+    color: #2196F3;
   }
   .contacts__element {
     margin-top: 302px;
