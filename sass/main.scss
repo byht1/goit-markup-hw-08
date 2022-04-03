@@ -9,11 +9,17 @@
   display: none;
 }
 
+// header and footer
 @import 'components/header-mobail'; // header mobail проблема 767px
 @import 'components/header';
+@import 'components/footer';
+
+// Page 1
 @import 'components/hero';
 @import 'components/benefist';
 @import 'components/activity';
 @import 'components/team';
 @import 'components/company';
-@import 'components/footer';
+
+// Page 2
+@import 'components/filter';
