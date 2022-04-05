@@ -5,10 +5,6 @@
 @import 'components/general/logo'; // Логотип
 @import 'components/general/button';
 
-.overlay {
-  display: none;
-}
-
 // header and footer
 @import 'components/header-mobail'; // header mobail проблема 767px
 @import 'components/header';
@@ -20,6 +16,9 @@
 @import 'components/activity';
 @import 'components/team';
 @import 'components/company';
+
+// Form
+@import 'components/form';
 
 // Page 2
 @import 'components/filter'; // + загальне оформлення Main

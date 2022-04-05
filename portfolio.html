@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homework one</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -150,12 +150,19 @@
                     <source
                       srcset="
                         ./images/portfolio/one/web/portfolio_one_desktop-370.webp 370w,
-                        ./images/portfolio/one/web/portfolio_one_desktop-740.webp 740w,
-                        ./images/portfolio/one/web/portfolio_one_mobile-450.webp  450w,
-                        ./images/portfolio/one/web/portfolio_one_mobile-900.webp  900w,
-                        ./images/portfolio/one/web/portfolio_one_tablet-354.webp  354w,
-                        ./images/portfolio/one/web/portfolio_one_tablet-708.webp  708w
+                        ./images/portfolio/one/web/portfolio_one_desktop-740.webp 740w
                       "
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/one/web/portfolio_one_mobile-450.webp 450w,
+                        ./images/portfolio/one/web/portfolio_one_mobile-900.webp 900w
+                      "
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/one/web/portfolio_one_tablet-354.webp 354w,
+                        ./images/portfolio/one/web/portfolio_one_tablet-708.webp 708w
+                      "
+                      media="(min-width: 768px) (max-width: 1199px)"
                       type="image/webp"
                     />
                     <img
@@ -168,7 +175,7 @@
                         ./images/portfolio/one/portfolio_one_tablet-354.jpg  354w,
                         ./images/portfolio/one/portfolio_one_tablet-708.jpg  708w
                       "
-                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw, 100vw"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
                       src="./images/portfolio/one/portfolio_one_desktop-370.jpg"
                       alt="MacBook Pro"
                     />

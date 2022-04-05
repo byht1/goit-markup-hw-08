@@ -181,11 +181,7 @@ button {
           transform: scale(0.9);
 }
 
-.overlay {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .desktope,
   .mobail-nav svg {
     display: none;
@@ -1086,6 +1082,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1152,6 +1151,258 @@ button {
 .company-list__element:focus {
   color: #2196F3;
   border-color: #2196F3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.form-box {
+  position: relative;
+  padding: 40px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.form-box__header {
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.form-label {
+  position: relative;
+  display: block;
+}
+
+.form-label__input {
+  height: 40px;
+  margin-bottom: 28px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-label__text {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-label__icon {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 18px;
+  fill: #212121;
+}
+
+.form-label__coment {
+  height: 120px;
+  padding: 12px 16px;
+  outline: none;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+}
+
+.form-chekbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.form-chekbox__text {
+  position: relative;
+  margin-top: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.form-chekbox__text::before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  bottom: -6px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
+
+.form-chekbox__input:checked ~ .form-chekbox__text::before {
+  border-color: #2196f3;
+  background-image: url(../images/vector.svg);
+  background-color: #2196f3;
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+  overflow: hidden;
+}
+
+.form-chekbox--blue {
+  color: #2196F3;
+  text-decoration: underline;
+}
+
+.button-form {
+  width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.button-form:hover, .button-form:focus {
+  border: 1px solid #2196f3;
+}
+
+.button-end {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-end__icon {
+  fill: currentColor;
+}
+
+.button-end:hover, .button-end:focus {
+  color: #2196f3;
+}
+
+.button-end:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.form-label__input:focus-within {
+  border: 1px solid #2196f3;
+}
+
+.form-label__input:focus-within ~ .form-label__icon {
+  fill: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .form-box {
+    width: 450px;
+    height: 609px;
+  }
+  .form-label__input {
+    width: 370px;
+  }
+  .form-label__coment {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-box {
+    width: 528px;
+    height: 581px;
+  }
+  .form-box__header {
+    line-height: 1.15;
+  }
+  .form-label__input {
+    width: 448px;
+  }
+  .form-label__coment {
+    width: 448px;
+  }
+  .form-chekbox {
+    display: block;
+  }
+  .form-chekbox__text {
+    margin-left: 35px;
+    margin-right: 11px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .form-chekbox__text::before {
+    content: '';
+    bottom: -3px;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .filter {
@@ -1294,6 +1545,11 @@ button {
   .work {
     margin-top: 25px;
   }
+  .work__card {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .work__card:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1351,6 +1607,9 @@ button {
   .work__icon {
     width: 370px;
     height: 294px;
+  }
+  .animation {
+    padding: 63px 24px;
   }
 }
 /*# sourceMappingURL=main.css.map */
