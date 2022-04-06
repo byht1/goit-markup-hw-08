@@ -358,26 +358,57 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/team/1/web/team_one_desktop-270.webp 270w,
-                      ./images/team/1/web/team_one_desktop-540.webp 540w,
-                      ./images/team/1/web/team_one_mobail-900.webp  900w,
-                      ./images/team/1/web/team_one_mobail-450.webp  450w,
-                      ./images/team/1/web/team_one_tablet-708.webp  708w,
-                      ./images/team/1/web/team_one_tablet-354.webp  354w
+                      ./images/team/1/web/team_one_desktop-270.webp 1x,
+                      ./images/team/1/web/team_one_desktop-540.webp 2x
                     "
+                    media="(min-width: 1200px)"
                     type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/1/web/team_one_mobail-900.webp 1x,
+                      ./images/team/1/web/team_one_mobail-450.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/1/web/team_one_tablet-708.webp 1x,
+                      ./images/team/1/web/team_one_tablet-354.webp 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/1/team_one_desktop-270.jpg 1x,
+                      ./images/team/1/team_one_desktop-540.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/1/team_one_mobail-900.jpg 1x,
+                      ./images/team/1/team_one_mobail-450.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/1/team_one_tablet-708.jpg 1x,
+                      ./images/team/1/team_one_tablet-354.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/jpeg"
                   />
                   <img
                     class="list__photo"
-                    srcset="
-                      ./images/team/1/team_one_desktop-270.jpg 270w,
-                      ./images/team/1/team_one_desktop-540.jpg 540w,
-                      ./images/team/1/team_one_mobail-900.jpg  900w,
-                      ./images/team/1/team_one_mobail-450.jpg  450w,
-                      ./images/team/1/team_one_tablel-708.jpg  708w,
-                      ./images/team/1/team_one_tablet-354.jpg  354w
-                    "
-                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw, 100vw"
                     src="./images/team/1/team_one_desktop-270.jpg"
                     alt="фото Игоря Демьяненка"
                   />
@@ -388,28 +419,48 @@
                   <p lang="en" class="text__profession">Product Designer</p>
                   <ul class="network">
                     <li class="network__element">
-                      <a class="network__link" href="https://www.instagram.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.instagram.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://twitter.com/?lang=ru">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://twitter.com/?lang=ru"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-Group-1"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://www.facebook.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.facebook.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://www.linkedin.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.linkedin.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                         </svg>
@@ -421,28 +472,60 @@
               <li class="list__element">
                 <picture>
                   <source
-                    class="list__photo"
                     srcset="
-                      ./images/team/2/web/team-two_desctop-270.webp 270w,
-                      ./images/team/2/web/team-two_desctop-540.webp 540w,
-                      ./images/team/2/web/team-two_mobaile-450.webp 450w,
-                      ./images/team/2/web/team-two_mobaile-900.webp 900w,
-                      ./images/team/2/web/team-two_tablet-354.webp  354w,
-                      ./images/team/2/web/team-two_tablet-708.webp  708w
+                      ./images/team/2/web/team_two_desktop-270.webp 1x,
+                      ./images/team/2/web/team_two_desktop-540.webp 2x
                     "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/2/web/team_two_mobail-900.webp 1x,
+                      ./images/team/2/web/team_two_mobail-450.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/2/web/team_two_tablet-708.webp 1x,
+                      ./images/team/2/web/team_two_tablet-354.webp 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/2/team_two_desktop-270.jpg 1x,
+                      ./images/team/2/team_two_desktop-540.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/2/team_two_mobail-900.jpg 1x,
+                      ./images/team/2/team_two_mobail-450.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/2/team_two_tablet-708.jpg 1x,
+                      ./images/team/2/team_two_tablet-354.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/jpeg"
                   />
                   <img
-                    srcset="
-                      ./images/team/2/team-two_desctop-270.jpg 270w,
-                      ./images/team/2/team-two_desctop-540.jpg 540w,
-                      ./images/team/2/team-two_mobaile-450.jpg 450w,
-                      ./images/team/2/team-two_mobaile-900.jpg 900w,
-                      ./images/team/2/team-two_tablet-354.jpg  354w,
-                      ./images/team/2/team-two_tablet-708.jpg  708w
-                    "
-                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw, 100vw"
-                    src="./images/team/2/team-two_desctop-270.jpg"
-                    alt="Фото Ольгы Ркпиной"
+                    class="list__photo"
+                    src="./images/team/2/team_two_desktop-270.jpg"
+                    alt="фото Ольги Репиной"
                   />
                 </picture>
 
@@ -451,28 +534,48 @@
                   <p lang="en" class="text__profession">Frontend Developer</p>
                   <ul class="network">
                     <li class="network__element">
-                      <a class="network__link" href="https://www.instagram.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.instagram.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://twitter.com/?lang=ru">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://twitter.com/?lang=ru"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-Group-1"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://www.facebook.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.facebook.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://www.linkedin.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.linkedin.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                         </svg>
@@ -484,28 +587,59 @@
               <li class="list__element">
                 <picture>
                   <source
-                    class="list__photo"
                     srcset="
-                      ./images/team/3/web/team_three_desctop-270.webp 270w,
-                      ./images/team/3/web/team_three_desctop-540.webp 540w,
-                      ./images/team/3/web/team_three_mobaile-900.webp 900w,
-                      ./images/team/3/web/team_three_mobaile-450.webp 450w,
-                      ./images/team/3/web/team_three_tablet-708.webp  708w,
-                      ./images/team/3/web/team_three_tablet-354.webp  354w
+                      ./images/team/3/web/team_three_desktop-270.webp 1x,
+                      ./images/team/3/web/team_three_desktop-540.webp 2x
                     "
+                    media="(min-width: 1200px)"
                     type="image/webp"
                   />
-                  <img
+
+                  <source
                     srcset="
-                      ./images/team/3/team_three_desctop-270.jpg 270w,
-                      ./images/team/3/team_three_desctop-540.jpg 540w,
-                      ./images/team/3/team_three_mobile-900.jpg  900w,
-                      ./images/team/3/team_three_mobile-450.jpg  450w,
-                      ./images/team/3/team_three_tablet-708.jpg  708w,
-                      ./images/team/3/team_three_tablet-354.jpg  354w
+                      ./images/team/3/web/team_three_mobail-900.webp 1x,
+                      ./images/team/3/web/team_three_mobail-450.webp 2x
                     "
-                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw, 100vw"
-                    src="./images/team/3/team_three_desctop-270.jpg"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/3/web/team_three_tablet-708.webp 1x,
+                      ./images/team/3/web/team_three_tablet-354.webp 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/3/team_three_desktop-270.jpg 1x,
+                      ./images/team/3/team_three_desktop-540.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/3/team_three_mobail-900.jpg 1x,
+                      ./images/team/3/team_three_mobail-450.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/3/team_three_tablet-708.jpg 1x,
+                      ./images/team/3/team_three_tablet-354.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="list__photo"
+                    src="./images/team/3/team_three_desktop-270.jpg"
                     alt="фото Николая Тарасова"
                   />
                 </picture>
@@ -515,28 +649,48 @@
                   <p lang="en" class="text__profession">Marketing</p>
                   <ul class="network">
                     <li class="network__element">
-                      <a class="network__link" href="https://www.instagram.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.instagram.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://twitter.com/?lang=ru">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://twitter.com/?lang=ru"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-Group-1"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://www.facebook.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.facebook.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://www.linkedin.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.linkedin.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                         </svg>
@@ -548,28 +702,59 @@
               <li class="list__element">
                 <picture>
                   <source
-                    class="list__photo"
                     srcset="
-                      ./images/team/4/web/team_three_desktop-270.webp 270w,
-                      ./images/team/4/web/team_three_desktop-540.webp 540w,
-                      ./images/team/4/web/team_three_mobile-900.webp  900w,
-                      ./images/team/4/web/team_three_mobile-450.webp  450w,
-                      ./images/team/4/web/team_three_tablet-708.webp  270w,
-                      ./images/team/4/web/team_three_tablet-354.webp  354w
+                      ./images/team/4/web/team_four_desktop-270.webp 1x,
+                      ./images/team/4/web/team_four_desktop-540.webp 2x
                     "
+                    media="(min-width: 1200px)"
                     type="image/webp"
                   />
-                  <img
+
+                  <source
                     srcset="
-                      ./images/team/4/web/team_three_desktop-270.webp 270w,
-                      ./images/team/4/web/team_three_desktop-540.webp 540w,
-                      ./images/team/4/web/team_three_mobile-900.webp  900w,
-                      ./images/team/4/web/team_three_mobile-450.webp  450w,
-                      ./images/team/4/web/team_three_tablet-708.webp  270w,
-                      ./images/team/4/web/team_three_tablet-354.webp  354w
+                      ./images/team/4/web/team_four_mobail-900.webp 1x,
+                      ./images/team/4/web/team_four_mobail-450.webp 2x
                     "
-                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw, 100vw"
-                    src="./images/team/4/team_three_desktop-270.jpg"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/4/web/team_four_tablet-708.webp 1x,
+                      ./images/team/4/web/team_four_tablet-354.webp 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/4/team_four_desktop-270.jpg 1x,
+                      ./images/team/4/team_four_desktop-540.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/team/4/team_four_mobail-900.jpg 1x,
+                      ./images/team/4/team_four_mobail-450.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/4/team_four_tablet-708.jpg 1x,
+                      ./images/team/4/team_four_tablet-354.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="list__photo"
+                    src="./images/team/4/team_four_desktop-270.jpg"
                     alt="фото Михаила Ермакова"
                   />
                 </picture>
@@ -579,28 +764,48 @@
                   <p lang="en" class="text__profession">UI Designer</p>
                   <ul class="network">
                     <li class="network__element">
-                      <a class="network__link" href="https://www.instagram.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.instagram.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://twitter.com/?lang=ru">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://twitter.com/?lang=ru"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-Group-1"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://www.facebook.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.facebook.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="network__element">
-                      <a class="network__link" href="https://www.linkedin.com">
+                      <a
+                        class="network__link"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="https://www.linkedin.com"
+                      >
                         <svg class="network__icon" width="20" height="20">
                           <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                         </svg>
@@ -700,28 +905,48 @@
             <h2 class="network-footer__header">присоединяйтесь</h2>
             <ul class="network-footer-box">
               <li class="network-footer-box__element">
-                <a class="network-footer-box__link" href="https://www.instagram.com">
+                <a
+                  class="network-footer-box__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://www.instagram.com"
+                >
                   <svg class="network-footer-box__icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
               <li class="network-footer-box__element">
-                <a class="network-footer-box__link" href="https://twitter.com/?lang=ru">
+                <a
+                  class="network-footer-box__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://twitter.com/?lang=ru"
+                >
                   <svg class="network-footer-box__icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-Group-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="network-footer-box__element">
-                <a class="network-footer-box__link" href="https://www.facebook.com">
+                <a
+                  class="network-footer-box__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://www.facebook.com"
+                >
                   <svg class="network-footer-box__icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="network-footer-box__element">
-                <a class="network-footer-box__link" href="https://www.linkedin.com">
+                <a
+                  class="network-footer-box__link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://www.linkedin.com"
+                >
                   <svg class="network-footer-box__icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                   </svg>
