@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+a:focus {
+  outline: none;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -44,6 +48,10 @@ button {
   padding: 0;
   margin: 0;
   border: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 .container {
@@ -1023,14 +1031,9 @@ button {
   color: #212121;
 }
 
-.company-list__element {
+.company-list__link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.company-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1066,7 +1069,7 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .company-list__element {
+  .company-list__link {
     width: 210px;
     padding: 16px 52px;
   }

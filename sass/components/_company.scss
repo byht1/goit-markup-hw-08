@@ -18,13 +18,9 @@
 }
 
 .company-list {
-  &__element {
+  &__link {
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    transition: border-color 250ms $cube;
-  }
-
-  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +50,7 @@
 
 @media screen and (max-width: 767px) {
   .company-list {
-    &__element {
+    &__link {
       width: 210px;
       padding: 16px 52px;
     }
