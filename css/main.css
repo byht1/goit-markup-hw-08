@@ -253,6 +253,7 @@ button:focus {
     margin-right: 40px;
   }
   .mobail-nav-box {
+    max-width: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
