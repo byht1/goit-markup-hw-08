@@ -338,6 +338,13 @@ button:focus {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .section-header {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-header {
     max-width: 768px;
@@ -500,7 +507,7 @@ button:focus {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .address--style {
@@ -1183,6 +1190,7 @@ button:focus {
     padding-bottom: 94px;
   }
   .company__header {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
   }

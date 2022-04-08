@@ -19,125 +19,131 @@
   </head>
   <body>
     <!-- Шапка or header -->
-    <header class="header section-header two">
-      <div class="box container desktope">
-        <nav class="nav">
-          <a class="nav__logo" href="index.html"><span class="nav--color">Web</span>Studio</a>
-          <ul class="page">
-            <li class="page__element">
-              <a class="page__link" href="index.html">Студия</a>
+    <header class="header two">
+      <div class="section-header">
+        <div class="box container desktope">
+          <nav class="nav">
+            <a class="nav__logo" href="index.html"><span class="nav--color">Web</span>Studio</a>
+            <ul class="page">
+              <li class="page__element page--activ">
+                <a class="page__link" href="index.html">Студия</a>
+              </li>
+              <li class="page__element">
+                <a class="page__link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="page__element"><a class="page__link" href="contact.html">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts__element">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="page__element page--activ">
-              <a class="page__link" href="portfolio.html">Портфолио</a>
+            <li class="contacts__element">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
-            <li class="page__element"><a class="page__link" href="contact.html">Контакти</a></li>
           </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts__element">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__element">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Мобільна версія -->
-      <div class="box container mobail">
-        <div class="mobail-box">
-          <a class="nav__logo" href="index.html"><span class="nav--color">Web</span>Studio</a>
-          <button
-            class="button-menu"
-            type="button"
-            data-menu-button
-            data-open-modal
-            data-close-modal
-          >
-            <svg class="button-menu__icon" width="40" height="40">
-              <use class="button-menu__menu" href="./images/symbol-defs.svg#icon-menu_end"></use>
-              <use class="button-menu__end" href="./images/symbol-defs.svg#icon-menu"></use>
-            </svg>
-          </button>
         </div>
-        <div class="mobail-nav is-hidden" data-backdrop>
-          <div class="mobail-nav-box" data-menu>
-            <nav class="nav">
-              <ul class="page">
-                <li class="page__element page--activ"><a class="page__link" href="/">Студия</a></li>
-                <li class="page__element">
-                  <a class="page__link" href="portfolio.html">Портфолио</a>
-                </li>
-                <li class="page__element">
-                  <a class="page__link" href="contact.html">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-            <ul class="contacts">
-              <li class="contacts__element">
-                <a class="contacts__tel" href="tel:+380961111111">
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-              <li class="contacts__element">
-                <a class="contacts__mail" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-            </ul>
-            <ul class="network-header">
-              <li class="network-header__element">
-                <a
-                  class="network-header__link"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  href="https://www.instagram.com"
-                  >Instagram</a
-                >
-              </li>
-              <li class="network-header__element">
-                <a
-                  class="network-header__link"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  href="https://twitter.com"
-                  >Twitter</a
-                >
-              </li>
-              <li class="network-header__element">
-                <a
-                  class="network-header__link"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  href="https://www.facebook.com"
-                  >Facebook</a
-                >
-              </li>
-              <li class="network-header__element">
-                <a
-                  class="network-header__link"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  href="https://www.linkedin.com"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
+        <!-- Мобільна версія -->
+        <div class="box mobail container">
+          <div class="mobail-box">
+            <a class="nav__logo" href="index.html"><span class="nav--color">Web</span>Studio</a>
+            <button
+              class="button-menu"
+              type="button"
+              data-menu-button
+              data-open-modal
+              data-close-modal
+            >
+              <svg class="button-menu__icon" width="40" height="40">
+                <use class="button-menu__menu" href="./images/symbol-defs.svg#icon-menu_end"></use>
+                <use class="button-menu__end" href="./images/symbol-defs.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobail-nav is-hidden" data-backdrop>
+            <div class="mobail-nav-box" data-menu>
+              <nav class="nav">
+                <ul class="page">
+                  <li class="page__element page--activ">
+                    <a class="page__link" href="index.html">Студия</a>
+                  </li>
+                  <li class="page__element">
+                    <a class="page__link" href="portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="page__element">
+                    <a class="page__link" href="contact.html">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+              <div>
+                <ul class="contacts">
+                  <li class="contacts__element">
+                    <a class="contacts__tel" href="tel:+380961111111">
+                      <svg class="contacts__icon" width="16" height="12">
+                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                      </svg>
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                  <li class="contacts__element">
+                    <a class="contacts__mail" href="mailto:info@devstudio.com">
+                      <svg class="contacts__icon" width="16" height="12">
+                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                      </svg>
+                      info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+                <ul class="network-header">
+                  <li class="network-header__element">
+                    <a
+                      class="network-header__link"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      href="https://www.instagram.com"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="network-header__element">
+                    <a
+                      class="network-header__link"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      href="https://twitter.com"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="network-header__element">
+                    <a
+                      class="network-header__link"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      href="https://www.facebook.com"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="network-header__element">
+                    <a
+                      class="network-header__link"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      href="https://www.linkedin.com"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -145,759 +151,761 @@
 
     <!-- Основной контент ot main -->
     <main class="main-portfolio">
-      <section class="section page-two-box">
-        <div class="container">
-          <h1 class="visually-hidden">Портфолио</h1>
-          <!-- Заховать -->
+      <section>
+        <div class="section page-two-box">
+          <div class="container">
+            <h1 class="visually-hidden">Портфолио</h1>
+            <!-- Заховать -->
 
-          <ul class="filter">
-            <li class="filter__element">
-              <button class="filter__button" type="button">Все</button>
-            </li>
-            <li class="filter__element">
-              <button class="filter__button" type="button">Веб-сайты</button>
-            </li>
-            <li class="filter__element">
-              <button class="filter__button" type="button">Приложения</button>
-            </li>
-            <li class="filter__element">
-              <button class="filter__button" type="button">Дизайн</button>
-            </li>
-            <li class="filter__element">
-              <button class="filter__button" type="button">Маркетинг</button>
-            </li>
-          </ul>
+            <ul class="filter">
+              <li class="filter__element">
+                <button class="filter__button" type="button">Все</button>
+              </li>
+              <li class="filter__element">
+                <button class="filter__button" type="button">Веб-сайты</button>
+              </li>
+              <li class="filter__element">
+                <button class="filter__button" type="button">Приложения</button>
+              </li>
+              <li class="filter__element">
+                <button class="filter__button" type="button">Дизайн</button>
+              </li>
+              <li class="filter__element">
+                <button class="filter__button" type="button">Маркетинг</button>
+              </li>
+            </ul>
 
-          <ul class="work">
-            <li class="work__card">
-              <a class="work__link" href="">
-                <div class="work__photo">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/one/web/portfolio_one_desktop-370.webp 1x,
-                        ./images/portfolio/one/web/portfolio_one_desktop-740.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
+            <ul class="work">
+              <li class="work__card">
+                <a class="work__link" href="">
+                  <div class="work__photo">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/one/web/portfolio_one_desktop-370.webp 1x,
+                          ./images/portfolio/one/web/portfolio_one_desktop-740.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/one/web/portfolio_one_mobile-450.webp 1x,
-                        ./images/portfolio/one/web/portfolio_one_mobile-900.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/one/web/portfolio_one_mobile-450.webp 1x,
+                          ./images/portfolio/one/web/portfolio_one_mobile-900.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/one/web/portfolio_one_tablet-354.webp 1x,
-                        ./images/portfolio/one/web/portfolio_one_tablet-708.webp 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/one/web/portfolio_one_tablet-354.webp 1x,
+                          ./images/portfolio/one/web/portfolio_one_tablet-708.webp 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/one/portfolio_one_desktop-370.jpg 1x,
-                        ./images/portfolio/one/portfolio_one_desktop-740.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/one/portfolio_one_desktop-370.jpg 1x,
+                          ./images/portfolio/one/portfolio_one_desktop-740.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/one/portfolio_one_mobile-450.jpg 1x,
-                        ./images/portfolio/one/portfolio_one_mobile-900.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/one/portfolio_one_mobile-450.jpg 1x,
+                          ./images/portfolio/one/portfolio_one_mobile-900.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/one/portfolio_one_tablet-354.jpg 1x,
-                        ./images/portfolio/one/portfolio_one_tablet-708.jpg 2x
-                      "
-                      media="(min-width: 768px) (max-width: 1199px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/one/portfolio_one_tablet-354.jpg 1x,
+                          ./images/portfolio/one/portfolio_one_tablet-708.jpg 2x
+                        "
+                        media="(min-width: 768px) (max-width: 1199px)"
+                        type="image/jpeg"
+                      />
 
-                    <img
-                      class="work__icon"
-                      src="./images/portfolio/one/portfolio_one_desktop-370.jpg"
-                      alt="MacBook Pro"
-                    />
-                  </picture>
+                      <img
+                        class="work__icon"
+                        src="./images/portfolio/one/portfolio_one_desktop-370.jpg"
+                        alt="MacBook Pro"
+                      />
+                    </picture>
 
-                  <div class="animation">
-                    <p class="animation__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
+                    <div class="animation">
+                      <p class="animation__text">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="work__box work--decoration">
-                  <h2 class="work__from">Технокряк</h2>
-                  <p class="work__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="work__card">
-              <a class="work__link" href="">
-                <div class="work__photo">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/two/web/portfolio_two_desktop-370.webp 1x,
-                        ./images/portfolio/two/web/portfolio_two_desktop-740.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/two/web/portfolio_two_mobile-450.webp 1x,
-                        ./images/portfolio/two/web/portfolio_two_mobile-900.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/two/web/portfolio_two_tablet-354.webp 1x,
-                        ./images/portfolio/two/web/portfolio_two_tablet-708.webp 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/two/portfolio_two_desktop-370.jpg 1x,
-                        ./images/portfolio/two/portfolio_two_desktop-740.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/two/portfolio_two_mobile-450.jpg 1x,
-                        ./images/portfolio/two/portfolio_two_mobile-900.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/two/portfolio_two_tablet-354.jpg 1x,
-                        ./images/portfolio/two/portfolio_two_tablet-708.jpg 2x
-                      "
-                      media="(min-width: 768px) (max-width: 1199px)"
-                      type="image/jpeg"
-                    />
-
-                    <img
-                      class="work__icon"
-                      src="./images/portfolio/two/portfolio_two_desktop-370.jpg"
-                      alt="Баскетбол"
-                    />
-                  </picture>
-
-                  <div class="animation">
-                    <p class="animation__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
+                  <div class="work__box work--decoration">
+                    <h2 class="work__from">Технокряк</h2>
+                    <p class="work__text">Веб-сайт</p>
                   </div>
-                </div>
+                </a>
+              </li>
 
-                <div class="work__box">
-                  <h2 class="work__from">Постер New Orlean vs Golden Star</h2>
-                  <p class="work__text">Дизайн</p>
-                </div>
-              </a>
-            </li>
+              <li class="work__card">
+                <a class="work__link" href="">
+                  <div class="work__photo">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/two/web/portfolio_two_desktop-370.webp 1x,
+                          ./images/portfolio/two/web/portfolio_two_desktop-740.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
 
-            <li class="work__card">
-              <a href="" class="work__link">
-                <div class="work__photo">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/three/web/portfolio_three_desktop-370.webp 1x,
-                        ./images/portfolio/three/web/portfolio_three_desktop-740.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/two/web/portfolio_two_mobile-450.webp 1x,
+                          ./images/portfolio/two/web/portfolio_two_mobile-900.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/three/web/portfolio_three_mobile-450.webp 1x,
-                        ./images/portfolio/three/web/portfolio_three_mobile-900.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/two/web/portfolio_two_tablet-354.webp 1x,
+                          ./images/portfolio/two/web/portfolio_two_tablet-708.webp 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/three/web/portfolio_three_tablet-354.webp 1x,
-                        ./images/portfolio/three/web/portfolio_three_tablet-708.webp 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/two/portfolio_two_desktop-370.jpg 1x,
+                          ./images/portfolio/two/portfolio_two_desktop-740.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/three/portfolio_three_desktop-370.jpg 1x,
-                        ./images/portfolio/three/portfolio_three_desktop-740.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/two/portfolio_two_mobile-450.jpg 1x,
+                          ./images/portfolio/two/portfolio_two_mobile-900.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/three/portfolio_three_mobile-450.jpg 1x,
-                        ./images/portfolio/three/portfolio_three_mobile-900.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/two/portfolio_two_tablet-354.jpg 1x,
+                          ./images/portfolio/two/portfolio_two_tablet-708.jpg 2x
+                        "
+                        media="(min-width: 768px) (max-width: 1199px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/three/portfolio_three_tablet-354.jpg 1x,
-                        ./images/portfolio/three/portfolio_three_tablet-708.jpg 2x
-                      "
-                      media="(min-width: 768px) (max-width: 1199px)"
-                      type="image/jpeg"
-                    />
+                      <img
+                        class="work__icon"
+                        src="./images/portfolio/two/portfolio_two_desktop-370.jpg"
+                        alt="Баскетбол"
+                      />
+                    </picture>
 
-                    <img
-                      class="work__icon"
-                      src="./images/portfolio/three/portfolio_three_desktop-370.jpg"
-                      alt="Баскетбол"
-                    />
-                  </picture>
-
-                  <div class="animation">
-                    <p class="animation__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
+                    <div class="animation">
+                      <p class="animation__text">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="work__box">
-                  <h2 class="work__from">Ресторан Seafood</h2>
-                  <p class="work__text">Приложение</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="work__card">
-              <a href="" class="work__link">
-                <div class="work__photo">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/four/web/portfolio_four_desktop-370.webp 1x,
-                        ./images/portfolio/four/web/portfolio_four_desktop-740.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/four/web/portfolio_four_mobile-450.webp 1x,
-                        ./images/portfolio/four/web/portfolio_four_mobile-900.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/four/web/portfolio_four_tablet-354.webp 1x,
-                        ./images/portfolio/four/web/portfolio_four_tablet-708.webp 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/four/portfolio_four_desktop-370.jpg 1x,
-                        ./images/portfolio/four/portfolio_four_desktop-740.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/four/portfolio_four_mobile-450.jpg 1x,
-                        ./images/portfolio/four/portfolio_four_mobile-900.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/four/portfolio_four_tablet-354.jpg 1x,
-                        ./images/portfolio/four/portfolio_four_tablet-708.jpg 2x
-                      "
-                      media="(min-width: 768px) (max-width: 1199px)"
-                      type="image/jpeg"
-                    />
-
-                    <img
-                      class="work__icon"
-                      src="./images/portfolio/four/portfolio_four_desktop-370.jpg"
-                      alt="Баскетбол"
-                    />
-                  </picture>
-
-                  <div class="animation">
-                    <p class="animation__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
+                  <div class="work__box">
+                    <h2 class="work__from">Постер New Orlean vs Golden Star</h2>
+                    <p class="work__text">Дизайн</p>
                   </div>
-                </div>
+                </a>
+              </li>
 
-                <div class="work__box">
-                  <h2 class="work__from">Проект Primeк</h2>
-                  <p class="work__text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
+              <li class="work__card">
+                <a href="" class="work__link">
+                  <div class="work__photo">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/three/web/portfolio_three_desktop-370.webp 1x,
+                          ./images/portfolio/three/web/portfolio_three_desktop-740.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
 
-            <li class="work__card">
-              <a href="" class="work__link">
-                <div class="work__photo">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/five/web/portfolio_five_desktop-370.webp 1x,
-                        ./images/portfolio/five/web/portfolio_five_desktop-740.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/three/web/portfolio_three_mobile-450.webp 1x,
+                          ./images/portfolio/three/web/portfolio_three_mobile-900.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/five/web/portfolio_five_mobile-450.webp 1x,
-                        ./images/portfolio/five/web/portfolio_five_mobile-900.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/three/web/portfolio_three_tablet-354.webp 1x,
+                          ./images/portfolio/three/web/portfolio_three_tablet-708.webp 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/five/web/portfolio_five_tablet-362.webp 1x,
-                        ./images/portfolio/five/web/portfolio_five_tablet-724.webp 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/three/portfolio_three_desktop-370.jpg 1x,
+                          ./images/portfolio/three/portfolio_three_desktop-740.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/five/portfolio_five_desktop-370.jpg 1x,
-                        ./images/portfolio/five/portfolio_five_desktop-740.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/three/portfolio_three_mobile-450.jpg 1x,
+                          ./images/portfolio/three/portfolio_three_mobile-900.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/five/portfolio_five_mobile-450.jpg 1x,
-                        ./images/portfolio/five/portfolio_five_mobile-900.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/three/portfolio_three_tablet-354.jpg 1x,
+                          ./images/portfolio/three/portfolio_three_tablet-708.jpg 2x
+                        "
+                        media="(min-width: 768px) (max-width: 1199px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/five/portfolio_five_tablet-362.jpg 1x,
-                        ./images/portfolio/five/portfolio_five_tablet-724.jpg 2x
-                      "
-                      media="(min-width: 768px) (max-width: 1199px)"
-                      type="image/jpeg"
-                    />
+                      <img
+                        class="work__icon"
+                        src="./images/portfolio/three/portfolio_three_desktop-370.jpg"
+                        alt="Баскетбол"
+                      />
+                    </picture>
 
-                    <img
-                      class="work__icon"
-                      src="./images/portfolio/five/portfolio_five_desktop-370.jpg"
-                      alt="Баскетбол"
-                    />
-                  </picture>
-
-                  <div class="animation">
-                    <p class="animation__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
+                    <div class="animation">
+                      <p class="animation__text">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="work__box">
-                  <h2 class="work__from">Проект Boxes</h2>
-                  <p class="work__text">Приложение</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="work__card">
-              <a href="" class="work__link">
-                <div class="work__photo">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/six/web/portfolio_six_desktop-370.webp 1x,
-                        ./images/portfolio/six/web/portfolio_six_desktop-740.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/six/web/portfolio_six_mobile-450.webp 1x,
-                        ./images/portfolio/six/web/portfolio_six_mobile-900.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/six/web/portfolio_six_tablet-354.webp 1x,
-                        ./images/portfolio/six/web/portfolio_six_tablet-708.webp 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/six/portfolio_six_desktop-370.jpg 1x,
-                        ./images/portfolio/six/portfolio_six_desktop-740.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/six/portfolio_six_mobile-450.jpg 1x,
-                        ./images/portfolio/six/portfolio_six_mobile-900.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/six/portfolio_six_tablet-354.jpg 1x,
-                        ./images/portfolio/six/portfolio_six_tablet-708.jpg 2x
-                      "
-                      media="(min-width: 768px) (max-width: 1199px)"
-                      type="image/jpeg"
-                    />
-
-                    <img
-                      class="work__icon"
-                      src="./images/portfolio/six/portfolio_six_desktop-370.jpg"
-                      alt="Баскетбол"
-                    />
-                  </picture>
-
-                  <div class="animation">
-                    <p class="animation__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
+                  <div class="work__box">
+                    <h2 class="work__from">Ресторан Seafood</h2>
+                    <p class="work__text">Приложение</p>
                   </div>
-                </div>
+                </a>
+              </li>
 
-                <div class="work__box">
-                  <h2 class="work__from">Inspiration has no Borders</h2>
-                  <p class="work__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
+              <li class="work__card">
+                <a href="" class="work__link">
+                  <div class="work__photo">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/four/web/portfolio_four_desktop-370.webp 1x,
+                          ./images/portfolio/four/web/portfolio_four_desktop-740.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
 
-            <li class="work__card">
-              <a href="" class="work__link">
-                <div class="work__photo">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/seven/web/portfolio_seven_desktop-370.webp 1x,
-                        ./images/portfolio/seven/web/portfolio_seven_desktop-740.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/four/web/portfolio_four_mobile-450.webp 1x,
+                          ./images/portfolio/four/web/portfolio_four_mobile-900.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/seven/web/portfolio_seven_mobile-450.webp 1x,
-                        ./images/portfolio/seven/web/portfolio_seven_mobile-900.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/four/web/portfolio_four_tablet-354.webp 1x,
+                          ./images/portfolio/four/web/portfolio_four_tablet-708.webp 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/seven/web/portfolio_seven_tablet-354.webp 1x,
-                        ./images/portfolio/seven/web/portfolio_seven_tablet-708.webp 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/four/portfolio_four_desktop-370.jpg 1x,
+                          ./images/portfolio/four/portfolio_four_desktop-740.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/seven/portfolio_seven_desktop-370.jpg 1x,
-                        ./images/portfolio/seven/portfolio_seven_desktop-740.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/four/portfolio_four_mobile-450.jpg 1x,
+                          ./images/portfolio/four/portfolio_four_mobile-900.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/seven/portfolio_seven_mobile-450.jpg 1x,
-                        ./images/portfolio/seven/portfolio_seven_mobile-900.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/four/portfolio_four_tablet-354.jpg 1x,
+                          ./images/portfolio/four/portfolio_four_tablet-708.jpg 2x
+                        "
+                        media="(min-width: 768px) (max-width: 1199px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/seven/portfolio_seven_tablet-354.jpg 1x,
-                        ./images/portfolio/seven/portfolio_seven_tablet-708.jpg 2x
-                      "
-                      media="(min-width: 768px) (max-width: 1199px)"
-                      type="image/jpeg"
-                    />
+                      <img
+                        class="work__icon"
+                        src="./images/portfolio/four/portfolio_four_desktop-370.jpg"
+                        alt="Баскетбол"
+                      />
+                    </picture>
 
-                    <img
-                      class="work__icon"
-                      src="./images/portfolio/seven/portfolio_seven_desktop-370.jpg"
-                      alt="Баскетбол"
-                    />
-                  </picture>
-
-                  <div class="animation">
-                    <p class="animation__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
+                    <div class="animation">
+                      <p class="animation__text">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="work__box">
-                  <h2 class="work__from">Издание Limited Edition</h2>
-                  <p class="work__text">Дизайн</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="work__card">
-              <a href="" class="work__link">
-                <div class="work__photo">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/eight/web/portfolio_eight_desktop-370.webp 1x,
-                        ./images/portfolio/eight/web/portfolio_eight_desktop-740.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/eight/web/portfolio_eight_mobile-450.webp 1x,
-                        ./images/portfolio/eight/web/portfolio_eight_mobile-900.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/eight/web/portfolio_eight_tablet-354.webp 1x,
-                        ./images/portfolio/eight/web/portfolio_eight_tablet-708.webp 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                      type="image/webp"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/eight/portfolio_eight_desktop-370.jpg 1x,
-                        ./images/portfolio/eight/portfolio_eight_desktop-740.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/eight/portfolio_eight_mobile-450.jpg 1x,
-                        ./images/portfolio/eight/portfolio_eight_mobile-900.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-
-                    <source
-                      srcset="
-                        ./images/portfolio/eight/portfolio_eight_tablet-354.jpg 1x,
-                        ./images/portfolio/eight/portfolio_eight_tablet-708.jpg 2x
-                      "
-                      media="(min-width: 768px) (max-width: 1199px)"
-                      type="image/jpeg"
-                    />
-
-                    <img
-                      class="work__icon"
-                      src="./images/portfolio/eight/portfolio_eight_desktop-370.jpg"
-                      alt="Баскетбол"
-                    />
-                  </picture>
-
-                  <div class="animation">
-                    <p class="animation__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
+                  <div class="work__box">
+                    <h2 class="work__from">Проект Primeк</h2>
+                    <p class="work__text">Маркетинг</p>
                   </div>
-                </div>
+                </a>
+              </li>
 
-                <div class="work__box">
-                  <h2 class="work__from">Проект LAB</h2>
-                  <p class="work__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
+              <li class="work__card">
+                <a href="" class="work__link">
+                  <div class="work__photo">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/five/web/portfolio_five_desktop-370.webp 1x,
+                          ./images/portfolio/five/web/portfolio_five_desktop-740.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
 
-            <li class="work__card">
-              <a href="" class="work__link">
-                <div class="work__photo">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio/nine/web/portfolio_nine_desktop-370.webp 1x,
-                        ./images/portfolio/nine/web/portfolio_nine_desktop-740.webp 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/five/web/portfolio_five_mobile-450.webp 1x,
+                          ./images/portfolio/five/web/portfolio_five_mobile-900.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/nine/web/portfolio_nine_mobile-450.webp 1x,
-                        ./images/portfolio/nine/web/portfolio_nine_mobile-900.webp 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/five/web/portfolio_five_tablet-362.webp 1x,
+                          ./images/portfolio/five/web/portfolio_five_tablet-724.webp 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        type="image/webp"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/nine/web/portfolio_nine_tablet-354.webp 1x,
-                        ./images/portfolio/nine/web/portfolio_nine_tablet-708.webp 2x
-                      "
-                      media="(min-width: 768px) and (max-width: 1199px)"
-                      type="image/webp"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/five/portfolio_five_desktop-370.jpg 1x,
+                          ./images/portfolio/five/portfolio_five_desktop-740.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/nine/portfolio_nine_desktop-370.jpg 1x,
-                        ./images/portfolio/nine/portfolio_nine_desktop-740.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/five/portfolio_five_mobile-450.jpg 1x,
+                          ./images/portfolio/five/portfolio_five_mobile-900.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/nine/portfolio_nine_mobile-450.jpg 1x,
-                        ./images/portfolio/nine/portfolio_nine_mobile-900.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
+                      <source
+                        srcset="
+                          ./images/portfolio/five/portfolio_five_tablet-362.jpg 1x,
+                          ./images/portfolio/five/portfolio_five_tablet-724.jpg 2x
+                        "
+                        media="(min-width: 768px) (max-width: 1199px)"
+                        type="image/jpeg"
+                      />
 
-                    <source
-                      srcset="
-                        ./images/portfolio/nine/portfolio_nine_tablet-354.jpg 1x,
-                        ./images/portfolio/nine/portfolio_nine_tablet-708.jpg 2x
-                      "
-                      media="(min-width: 768px) (max-width: 1199px)"
-                      type="image/jpeg"
-                    />
+                      <img
+                        class="work__icon"
+                        src="./images/portfolio/five/portfolio_five_desktop-370.jpg"
+                        alt="Баскетбол"
+                      />
+                    </picture>
 
-                    <img
-                      class="work__icon"
-                      src="./images/portfolio/nine/portfolio_nine_desktop-370.jpg"
-                      alt="Баскетбол"
-                    />
-                  </picture>
-
-                  <div class="animation">
-                    <p class="animation__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
-                    </p>
+                    <div class="animation">
+                      <p class="animation__text">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="work__box">
-                  <h2 class="work__from">Growing Business</h2>
-                  <p class="work__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-          </ul>
+                  <div class="work__box">
+                    <h2 class="work__from">Проект Boxes</h2>
+                    <p class="work__text">Приложение</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="work__card">
+                <a href="" class="work__link">
+                  <div class="work__photo">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/six/web/portfolio_six_desktop-370.webp 1x,
+                          ./images/portfolio/six/web/portfolio_six_desktop-740.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/six/web/portfolio_six_mobile-450.webp 1x,
+                          ./images/portfolio/six/web/portfolio_six_mobile-900.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/six/web/portfolio_six_tablet-354.webp 1x,
+                          ./images/portfolio/six/web/portfolio_six_tablet-708.webp 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/six/portfolio_six_desktop-370.jpg 1x,
+                          ./images/portfolio/six/portfolio_six_desktop-740.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/six/portfolio_six_mobile-450.jpg 1x,
+                          ./images/portfolio/six/portfolio_six_mobile-900.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/six/portfolio_six_tablet-354.jpg 1x,
+                          ./images/portfolio/six/portfolio_six_tablet-708.jpg 2x
+                        "
+                        media="(min-width: 768px) (max-width: 1199px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="work__icon"
+                        src="./images/portfolio/six/portfolio_six_desktop-370.jpg"
+                        alt="Баскетбол"
+                      />
+                    </picture>
+
+                    <div class="animation">
+                      <p class="animation__text">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="work__box">
+                    <h2 class="work__from">Inspiration has no Borders</h2>
+                    <p class="work__text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="work__card">
+                <a href="" class="work__link">
+                  <div class="work__photo">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/seven/web/portfolio_seven_desktop-370.webp 1x,
+                          ./images/portfolio/seven/web/portfolio_seven_desktop-740.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/seven/web/portfolio_seven_mobile-450.webp 1x,
+                          ./images/portfolio/seven/web/portfolio_seven_mobile-900.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/seven/web/portfolio_seven_tablet-354.webp 1x,
+                          ./images/portfolio/seven/web/portfolio_seven_tablet-708.webp 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/seven/portfolio_seven_desktop-370.jpg 1x,
+                          ./images/portfolio/seven/portfolio_seven_desktop-740.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/seven/portfolio_seven_mobile-450.jpg 1x,
+                          ./images/portfolio/seven/portfolio_seven_mobile-900.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/seven/portfolio_seven_tablet-354.jpg 1x,
+                          ./images/portfolio/seven/portfolio_seven_tablet-708.jpg 2x
+                        "
+                        media="(min-width: 768px) (max-width: 1199px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="work__icon"
+                        src="./images/portfolio/seven/portfolio_seven_desktop-370.jpg"
+                        alt="Баскетбол"
+                      />
+                    </picture>
+
+                    <div class="animation">
+                      <p class="animation__text">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="work__box">
+                    <h2 class="work__from">Издание Limited Edition</h2>
+                    <p class="work__text">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="work__card">
+                <a href="" class="work__link">
+                  <div class="work__photo">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/eight/web/portfolio_eight_desktop-370.webp 1x,
+                          ./images/portfolio/eight/web/portfolio_eight_desktop-740.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/eight/web/portfolio_eight_mobile-450.webp 1x,
+                          ./images/portfolio/eight/web/portfolio_eight_mobile-900.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/eight/web/portfolio_eight_tablet-354.webp 1x,
+                          ./images/portfolio/eight/web/portfolio_eight_tablet-708.webp 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/eight/portfolio_eight_desktop-370.jpg 1x,
+                          ./images/portfolio/eight/portfolio_eight_desktop-740.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/eight/portfolio_eight_mobile-450.jpg 1x,
+                          ./images/portfolio/eight/portfolio_eight_mobile-900.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/eight/portfolio_eight_tablet-354.jpg 1x,
+                          ./images/portfolio/eight/portfolio_eight_tablet-708.jpg 2x
+                        "
+                        media="(min-width: 768px) (max-width: 1199px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="work__icon"
+                        src="./images/portfolio/eight/portfolio_eight_desktop-370.jpg"
+                        alt="Баскетбол"
+                      />
+                    </picture>
+
+                    <div class="animation">
+                      <p class="animation__text">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="work__box">
+                    <h2 class="work__from">Проект LAB</h2>
+                    <p class="work__text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="work__card">
+                <a href="" class="work__link">
+                  <div class="work__photo">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/nine/web/portfolio_nine_desktop-370.webp 1x,
+                          ./images/portfolio/nine/web/portfolio_nine_desktop-740.webp 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/nine/web/portfolio_nine_mobile-450.webp 1x,
+                          ./images/portfolio/nine/web/portfolio_nine_mobile-900.webp 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/nine/web/portfolio_nine_tablet-354.webp 1x,
+                          ./images/portfolio/nine/web/portfolio_nine_tablet-708.webp 2x
+                        "
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/nine/portfolio_nine_desktop-370.jpg 1x,
+                          ./images/portfolio/nine/portfolio_nine_desktop-740.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        type="image/jpeg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/nine/portfolio_nine_mobile-450.jpg 1x,
+                          ./images/portfolio/nine/portfolio_nine_mobile-900.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio/nine/portfolio_nine_tablet-354.jpg 1x,
+                          ./images/portfolio/nine/portfolio_nine_tablet-708.jpg 2x
+                        "
+                        media="(min-width: 768px) (max-width: 1199px)"
+                        type="image/jpeg"
+                      />
+
+                      <img
+                        class="work__icon"
+                        src="./images/portfolio/nine/portfolio_nine_desktop-370.jpg"
+                        alt="Баскетбол"
+                      />
+                    </picture>
+
+                    <div class="animation">
+                      <p class="animation__text">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="work__box">
+                    <h2 class="work__from">Growing Business</h2>
+                    <p class="work__text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
