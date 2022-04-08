@@ -33,6 +33,7 @@
 .text {
   padding-top: 30px;
   padding-bottom: 24px;
+  background-color: #fff;
   &__name,
   &__profession {
     font-family: 'Roboto';
@@ -80,6 +81,16 @@
     fill: currentColor;
   }
 }
+
+// @media screen and (min-width: 480px) {
+//   .team .section {
+//     display: flex;
+//     justify-content: center;
+//   }
+//   .list__element {
+//     width: 450px;
+//   }
+// }
 
 @media screen and (min-width: 768px) {
   .list {

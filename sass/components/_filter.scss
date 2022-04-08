@@ -29,12 +29,6 @@
   }
 }
 
-@media screen and (min-width: 641px) {
-  .filter {
-    justify-content: center;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .filter__element {
     margin-bottom: 15px;
@@ -49,6 +43,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
   .filter {
     margin-bottom: 30px;
   }

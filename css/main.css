@@ -74,6 +74,13 @@ button:focus {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section {
     max-width: 768px;
@@ -245,6 +252,18 @@ button:focus {
     margin-left: 40px;
     margin-right: 40px;
   }
+  .mobail-nav-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 100%;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
   .page__element {
     color: #212121;
   }
@@ -264,7 +283,7 @@ button:focus {
     color: #2196F3;
   }
   .contacts__element {
-    margin-top: 302px;
+    margin-top: auto;
   }
   .contacts__element:last-child {
     margin-top: 32px;
@@ -291,7 +310,10 @@ button:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 64px;
+    max-width: 100%;
   }
   .network-header__element:not(:last-child) {
     margin-right: 10px;
@@ -312,6 +334,20 @@ button:focus {
 @media screen and (min-width: 768px) {
   .box.mobail {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-header {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-header {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -673,6 +709,20 @@ button:focus {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-hero {
+    max-width: 1199px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .hero {
     height: 400px;
@@ -698,12 +748,18 @@ button:focus {
 @media screen and (min-width: 769px) {
   .hero {
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/fon/web/fon_desktop@1x.webp") 1x, url("../images/fon/web/fon_desktop@2x.webp") 2x, url("../images/fon/fon_desktop@1x.jpg") 1x, url("../images/fon/fon_desktop@2x.jpg") 2x);
     background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/fon/web/fon_desktop@1x.webp") 1x, url("../images/fon/web/fon_desktop@2x.webp") 2x, url("../images/fon/fon_desktop@1x.jpg") 1x, url("../images/fon/fon_desktop@2x.jpg") 2x);
     background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4)), image-set(url("../images/fon/web/fon_desktop@1x.webp") 1x, url("../images/fon/web/fon_desktop@2x.webp") 2x, url("../images/fon/fon_desktop@1x.jpg") 1x, url("../images/fon/fon_desktop@2x.jpg") 2x);
     background-position: 50% 50%;
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
   }
   .hero .box-hero {
     padding-top: 200px;
@@ -902,6 +958,7 @@ button:focus {
 .text {
   padding-top: 30px;
   padding-bottom: 24px;
+  background-color: #fff;
 }
 
 .text__name, .text__profession {
@@ -1445,14 +1502,6 @@ button:focus {
   background-color: #2196F3;
 }
 
-@media screen and (min-width: 641px) {
-  .filter {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .filter__element {
     margin-bottom: 15px;
@@ -1467,6 +1516,11 @@ button:focus {
 }
 
 @media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .filter {
     margin-bottom: 30px;
   }

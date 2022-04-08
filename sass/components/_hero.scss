@@ -14,6 +14,18 @@
   text-transform: uppercase;
   color: $colorWhite;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-hero {
+    max-width: 1199px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .hero {
@@ -48,7 +60,7 @@
 @media screen and (min-width: 769px) {
   .hero {
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4)),
       image-set(
         url('../images/fon/web/fon_desktop@1x.webp') 1x,
@@ -58,6 +70,12 @@
       );
     background-position: 50% 50%;
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
     .box-hero {
       padding-top: 200px;
       padding-bottom: 200px;

@@ -37,6 +37,16 @@
   }
 }
 
+// @media screen and (min-width: 480px) {
+//   .benefist-box {
+//     display: flex;
+//     justify-content: center;
+//   }
+//   .content__element {
+//     width: 450px;
+//   }
+// }
+
 @media screen and (max-width: 767px) {
   .content {
     &__element:not(:first-child) {
