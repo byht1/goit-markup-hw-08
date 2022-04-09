@@ -253,7 +253,6 @@ button:focus {
     margin-right: 40px;
   }
   .mobail-nav-box {
-    max-width: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -340,7 +339,6 @@ button:focus {
 
 @media screen and (min-width: 480px) {
   .section-header {
-    max-width: 480px;
     margin: 0 auto;
   }
 }
